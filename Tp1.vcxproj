@@ -139,7 +139,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Baton.cpp" />
+    <ClCompile Include="Magicien.cpp" />
+    <ClCompile Include="Sort.cpp" />
+    <ClCompile Include="SortType.cpp" />
     <ClCompile Include="Tp1.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Baton.h" />
+    <ClInclude Include="Magicien.h" />
+    <ClInclude Include="Sort.h" />
+    <ClInclude Include="SortType.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
