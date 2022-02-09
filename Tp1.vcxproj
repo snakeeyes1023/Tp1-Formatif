@@ -144,12 +144,14 @@
     <ClCompile Include="Sort.cpp" />
     <ClCompile Include="SortType.cpp" />
     <ClCompile Include="Tp1.cpp" />
+    <ClCompile Include="Utilitaires.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Baton.h" />
     <ClInclude Include="Magicien.h" />
     <ClInclude Include="Sort.h" />
     <ClInclude Include="SortType.h" />
+    <ClInclude Include="Utilitaires.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

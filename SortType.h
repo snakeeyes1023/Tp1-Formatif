@@ -6,6 +6,7 @@
 enum class SortType
 {
 	Attaque,
-	Defense
+	Defense,
+	Null
 };
 

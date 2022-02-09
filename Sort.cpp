@@ -13,3 +13,14 @@ Sort::Sort(int dommage, SortType type, std::string nom)
 	m_nom = nom;
 	m_type = type;
 }
+
+int Sort::ObtenirDommage()
+{
+	return m_dommage;
+}
+
+std::string Sort::ObtenirNom()
+{
+	std::string nomType = m_type == SortType::Attaque ? "Attaque" : "Protection";
+	return m_nom + " de " + nomType;
+}
