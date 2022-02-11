@@ -22,8 +22,16 @@ public:
 	/// <param name="nom">Nom du sort</param>
 	Sort(int, SortType, std::string);
 
+	/// <summary>
+	/// Obtenir les dommages du sorts
+	/// </summary>
+	/// <returns></returns>
 	int ObtenirDommage();
 
+	/// <summary>
+	/// Obtenir le nom du sort
+	/// </summary>
+	/// <returns></returns>
 	std::string ObtenirNom();
 
 private:

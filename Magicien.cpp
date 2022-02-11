@@ -126,6 +126,7 @@ void Magicien::LancerSortAttaque(Magicien& adversaire)
 		if (adversaire.m_bouclier < 0)
 		{
 			adversaire.m_vie -= abs(adversaire.m_bouclier);
+			adversaire.m_bouclier = 0;
 		}
 	}
 }

@@ -1,6 +1,3 @@
-// Tp1.cpp : Ce fichier contient la fonction 'main'. L'exécution du programme commence et se termine à cet endroit.
-//
-
 #include <iostream>
 #include "Sort.h"
 #include <vector>
@@ -13,12 +10,12 @@ int main()
 {
 	//Intialise les sorts
 	vector<Sort> sortDefDispo = vector<Sort>();
-	sortDefDispo.push_back(Sort(20, SortType::Attaque, "Incinérateur "));
-	sortDefDispo.push_back(Sort(30, SortType::Attaque, "Foudre "));
+	sortDefDispo.push_back(Sort(20, SortType::Defense, "Incinérateur "));
+	sortDefDispo.push_back(Sort(-30, SortType::Defense, "Foudre "));
 
 	vector<Sort> sortAttDispo = vector<Sort>();
-	sortAttDispo.push_back(Sort(20, SortType::Defense, "Guérison "));
-	sortAttDispo.push_back(Sort(30, SortType::Defense, "Protection "));
+	sortAttDispo.push_back(Sort(20, SortType::Attaque, "Guérison "));
+	sortAttDispo.push_back(Sort(30, SortType::Attaque, "Protection "));
 	
 	//Initialise les batons
 	Baton batonJoueur = Baton(sortAttDispo, sortDefDispo);
@@ -31,6 +28,8 @@ int main()
 
 	while (joueur.EstVivant() && ordi.EstVivant())
 	{
+		std::system("CLS");
+
 		joueur.AfficherStats();
 		ordi.AfficherStats();
 
@@ -45,5 +44,15 @@ int main()
 			ordi.Jouer(joueur);
 			joueur.Jouer(ordi);
 		}
+	}
+
+	if (joueur.EstVivant())
+	{
+		std::cout << "Vous avez gagné";
+	}
+	else 
+	{
+		std::cout << "Vous avez perdu";
+
 	}
 }
