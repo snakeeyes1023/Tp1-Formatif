@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Baton">
+    <Position X="0.75" Y="0.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAABACAAAAAAAAAAAAAAAAIAAQAAAAAAAJCA=</HashCode>
+      <FileName>Baton.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Magicien">
+    <Position X="3" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABACCAAAFAAACAAAAAACAAAAAAAAMCAABAQAGA=</HashCode>
+      <FileName>Magicien.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sort">
+    <Position X="5.75" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAIAAAAAAAAAAAAAAQAAAkAAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>Sort.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Utilitaires">
+    <Position X="5.75" Y="3" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAEAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Utilitaires.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="SortType">
+    <Position X="8.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQIAAgAAAAA=</HashCode>
+      <FileName>SortType.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
