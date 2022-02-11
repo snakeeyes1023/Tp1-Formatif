@@ -58,13 +58,30 @@ void Magicien::ChangerBaton()
 
 void Magicien::LancerSort(SortType type, Magicien& adversaire)
 {
+	std::cout << "\n";
+
 	if (type == SortType::Attaque)
 	{
 		LancerSortAttaque(adversaire);
+		if (m_estRobot)
+		{
+			std::cout << "Le robot lance son sort d'attaque ! \n";
+		}
+		else {
+			std::cout << "Vous lancer votre sort d'attaque ! \n";
+		}
 	}
 	if (type == SortType::Defense)
 	{
 		LancerSortDefense();
+		if (m_estRobot)
+		{
+			std::cout << "Le robot lance son sort de défense ! \n";
+		}
+		else {
+			std::cout << "Vous lancer votre sort de défense ! \n";
+		}
+
 	}
 }
 
@@ -119,10 +136,12 @@ SortType Magicien::AfficherChoixSort()
 	bool resultatInvalide = true;
 	while (resultatInvalide)
 	{
+		std::cout << "\n\n\n\n\n\n\n";
 		std::cout << "Choisissez votre sort ! \n";
 		std::cout << "[0] " << "Changer de baton" << "\n";
 		std::cout << "[1] " << m_baton.ObtenirSortAttaque().ObtenirNom() << "\n";
 		std::cout << "[2] " << m_baton.ObtenirSortDefense().ObtenirNom() << "\n";
+		std::cout << "\n\n\n\n\n\n\n";
 
 		cin >> resultat;
 
@@ -138,4 +157,22 @@ SortType Magicien::AfficherChoixSort()
 	}
 	
 	return resultat == "1" ? SortType::Attaque : SortType::Defense;
+}
+
+void Magicien::AfficherStats()
+{
+	std::cout << "\n";
+
+	if (m_estRobot)
+	{
+		std::cout << "Joueur ";
+
+	}
+	else
+	{
+		std::cout << "Robot ";
+	}
+
+	std::cout << m_vie << " pv || " << m_mana << " mana || " << m_bouclier << " bouclier";
+
 }

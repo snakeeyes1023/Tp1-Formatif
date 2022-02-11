@@ -31,6 +31,9 @@ int main()
 
 	while (joueur.EstVivant() && ordi.EstVivant())
 	{
+		joueur.AfficherStats();
+		ordi.AfficherStats();
+
 		//Random détermine qui commence
 		if (Utilitaires::OtbenirBoolHazard())
 		{

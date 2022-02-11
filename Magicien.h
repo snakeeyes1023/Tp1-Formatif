@@ -12,6 +12,8 @@ public:
 
 	int m_bouclier;
 
+	int m_mana;
+
 	Magicien(Baton& baton, bool robotiser = false);
 
 	Magicien();
@@ -29,11 +31,12 @@ public:
 	void LancerSortAttaque(Magicien& adversaire);
 
 	SortType AfficherChoixSort();
+	
+	void AfficherStats();
 
 private:
 	int m_maxVie = 100;
 	int m_maxBouclier = 50;
-	int m_mana;
 	Baton m_baton;
 	bool m_estRobot;
 };
